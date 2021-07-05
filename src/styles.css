@@ -1,0 +1,53 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+/* Custom css */
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+  --Dark-gray: hsla(0, 0%, 59%, 1);
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+}
+
+body {
+  font-weight: 400;
+  min-height: 100vh;
+  max-width: 100vw;
+  background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: -200px -500px, 785px 400px;
+  padding: 10px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background-color: var(--Dark-cyan);
+  font-family: 'Kumbh Sans',
+  sans-serif;
+}
+
+.bg-img {
+  background-image: url(./images/bg-pattern-card.svg)
+}
+
+.border-bottom {
+  border-bottom: 1px solid hsla(0, 0%, 90%, 1);
+}
+
+.card-text-color1 {
+  color: var(--Very-dark-desaturated-blue);
+}
+
+.card-text-color2 {
+  color: var(--Dark-grayish-blue);
+}
+
+.text-xxs {
+  font-size: 0.57em;
+  line-height: 0.30em;
+}
